@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { StaffComponent } from './staff/staff.component';
-import { LoginFormComponent } from './login-form/login-form.component';
+import { LoginFormComponent } from './Admin/login-form/login-form.component';
 import { AboutComponent } from './about/about.component';
+import { RecordsComponent } from './Admin/records/records.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AboutComponent } from './about/about.component';
     StaffComponent,
     LoginFormComponent,
     AboutComponent,
+    RecordsComponent,
   ],
   imports: [
     BrowserModule,
