@@ -9,6 +9,7 @@ import { Employee } from './employee';
 export class EmployeeService {
 
   private baseURL="http://localhost:8080/api/v1/employees"
+ 
   constructor(private httpClient:HttpClient) { }
 
   getEmployeesList():Observable<Employee[]>{
@@ -17,5 +18,7 @@ export class EmployeeService {
   private addURL="http://localhost:8080/api/v1/add"
 
   //--------------------adding employee--------------
-  //setEmployee():Observable<Employee[]>{}
+  createEmployee(employee:Employee): Observable<Employee>{
+    return this.httpClient.post<Employee>(`${this.addURL}`,employee)
+  }
 }
