@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import{HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,8 @@ import { StaffComponent } from './staff/staff.component';
 import { LoginFormComponent } from './Admin/login-form/login-form.component';
 import { AboutComponent } from './about/about.component';
 import { RecordsComponent } from './Admin/records/records.component';
+import { CreateEmployeeComponent } from './Admin/create-employee/create-employee.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,14 @@ import { RecordsComponent } from './Admin/records/records.component';
     LoginFormComponent,
     AboutComponent,
     RecordsComponent,
+    CreateEmployeeComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
