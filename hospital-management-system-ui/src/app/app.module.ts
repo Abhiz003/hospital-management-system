@@ -10,7 +10,7 @@ import { LoginFormComponent } from './Admin/login-form/login-form.component';
 import { AboutComponent } from './about/about.component';
 import { RecordsComponent } from './Admin/records/records.component';
 import { CreateEmployeeComponent } from './Admin/create-employee/create-employee.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

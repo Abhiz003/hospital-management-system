@@ -1,10 +1,9 @@
-<form (ngSubmit)="onSubmit()">
-
-</form>
-<div class="employee-box">
-    <input type="text" placeholder="Enter First Name" [(ngModel)]="employee.firstName"><br>
-    <input type="text" placeholder="Enter Last Name" [(ngModel)]="employee.lastName"><br>
-    <input type="text" placeholder="Enter Email ID" [(ngModel)]="employee.email"><br>
+<form [formGroup]="addEmployeeForm" (ngSubmit)="onSubmit(addEmployeeForm.value)">
+  <div class="employee-box">
+    <input type="text" placeholder="Enter First Name" formControlName="firstName"><br>
+    <input type="text" placeholder="Enter Last Name" formControlName="lastName"><br>
+    <input type="text" placeholder="Enter Email ID" formControlName="email"><br>
 
     <button class="btn btn-success" type="submit">submit</button>
   </div>
+</form>
