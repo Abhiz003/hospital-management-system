@@ -5,6 +5,7 @@ import { StaffComponent } from './staff/staff.component';
 import { AboutComponent } from './about/about.component';
 import { LoginFormComponent } from './Admin/login-form/login-form.component';
 import { RecordsComponent } from './Admin/records/records.component';
+import { CreateEmployeeComponent } from './Admin/create-employee/create-employee.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -13,7 +14,10 @@ const routes: Routes = [
   {path:'about', component:AboutComponent},
   {path:'login-form', children:[
   {path:'', component:LoginFormComponent},
-  {path:'records', component:RecordsComponent}
+  {path:'records', children:[
+    {path:'',component:RecordsComponent},
+    {path:'createEmployee', component:CreateEmployeeComponent}
+    ]}
 ]}
 ];
 

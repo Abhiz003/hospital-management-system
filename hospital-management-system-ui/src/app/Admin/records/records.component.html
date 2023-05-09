@@ -1,13 +1,22 @@
-<table>
-    <tr>
-        <th>FirstName</th>
-        <th>LastNme</th>
-        <th>Email</th>
-    </tr>
-    <tr *ngFor="let employee of employees">
-        <td>{{employee.employeeId}}</td>
-        <td>{{employee.firstName}}</td>
-        <td>{{employee.lastName}}</td>
-        <td>{{employee.email}}</td>
-    </tr>
-</table>
+<div class="container">
+    <h2>Records of emoployees <small>[Doctors]</small></h2>
+    <a routerLink="createEmployee"><button>&#10133;Add more</button></a>
+    <table class="responsive-table">
+        <tr class="table-header">
+            <th>Emp-ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>More</th>
+        </tr>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.employeeId}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.email}}</td>
+            <td><button>More</button>&nbsp;<button>Delete</button></td>
+        </tr>
+    </table>
+  </div>
+  
+  
