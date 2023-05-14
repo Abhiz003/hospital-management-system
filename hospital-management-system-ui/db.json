@@ -1,0 +1,22 @@
+{
+  "Employees": [
+    {
+      "username": "Abcd",
+      "password": "12345",
+      "email": "abcd@123",
+      "id": 1
+    },
+    {
+      "username": "Abhi",
+      "password": "12345",
+      "email": "abhi@123",
+      "id": 2
+    },
+    {
+      "username": "abhi",
+      "password": "12345",
+      "email": "abhijitbhangale3@gmail.com",
+      "id": 3
+    }
+  ]
+}
